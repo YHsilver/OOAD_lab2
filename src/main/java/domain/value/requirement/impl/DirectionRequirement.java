@@ -13,7 +13,7 @@ import java.util.Map;
  * 方向选修要求
  * 继承【学分要求】
  */
-public class DirectionRequirement extends CreditRequirement implements Requirement {
+public class DirectionRequirement extends CreditRequirement {
     public String directionName;
 
     public DirectionRequirement(String directionName,

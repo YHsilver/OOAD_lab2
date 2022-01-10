@@ -30,8 +30,10 @@ public abstract class AbstractRequirement {
 
         // 从未成功匹配的修读记录中使学分互换生效，进行二次匹配
         Collection<Course> leftLearningCourses = learningMap.values();
-        leftLearningCourses.removeAll(firstMatchedCourses); // 移除已匹配成功的课程
+        // 移除已匹配成功的课程
+        leftLearningCourses.removeAll(firstMatchedCourses);
 
+        //找到交换的课程
         List<String> exchangeCourses = new ArrayList<>();
         Map<String, MatchEntry> exchangeMatchEntry = new HashMap<>();
         for (Course course : leftLearningCourses) {

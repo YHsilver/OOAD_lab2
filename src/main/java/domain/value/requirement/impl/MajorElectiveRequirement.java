@@ -12,7 +12,7 @@ import java.util.Map;
  * 专业选修要求
  * 继承【学分要求】
  */
-public class MajorElectiveRequirement extends CreditRequirement implements Requirement {
+public class MajorElectiveRequirement extends CreditRequirement {
 
     public MajorElectiveRequirement(List<String> courseIds, int totalCredit) {
         super(courseIds, totalCredit);

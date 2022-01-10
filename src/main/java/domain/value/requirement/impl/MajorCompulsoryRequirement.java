@@ -11,7 +11,7 @@ import java.util.*;
  * 专业必修要求
  * 继承【必修要求】
  */
-public class MajorCompulsoryRequirement extends CompulsoryRequirement implements Requirement {
+public class MajorCompulsoryRequirement extends CompulsoryRequirement{
 
     public MajorCompulsoryRequirement(List<String> courseIds) {
         super(courseIds);

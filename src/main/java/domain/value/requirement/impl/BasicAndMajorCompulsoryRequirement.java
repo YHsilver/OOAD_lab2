@@ -10,10 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 基础必修要求
- * 继承【必修要求】
+ * 基础必修课和专业必修课
  */
-public class BasicAndMajorCompulsoryRequirement extends CompulsoryRequirement implements Requirement {
+public class BasicAndMajorCompulsoryRequirement extends CompulsoryRequirement {
 
     public BasicAndMajorCompulsoryRequirement(List<String> courseIds) {
         super(courseIds);

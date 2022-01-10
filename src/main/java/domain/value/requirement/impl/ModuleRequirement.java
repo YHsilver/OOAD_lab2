@@ -13,7 +13,7 @@ import java.util.Map;
  * 模块选修要求
  * 继承【修读门数要求】
  */
-public class ModuleRequirement extends CountRequirement implements Requirement {
+public class ModuleRequirement extends CountRequirement {
     private String moduleName;
 
     public ModuleRequirement(String moduleName, List<String> courseIds, int totalCount) {

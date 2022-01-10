@@ -19,6 +19,7 @@ public class CourseLoader {
                 Course course = CourseFactory.registerCourse(info[0], info[1], Integer.parseInt(info[2]));
                 if (course == null) return false;
                 // 配置全局替换
+                //using the courseFactory
                 if (info.length == 4 && !info[3].equals("none") && !info[3].equals("exchange")) {
                     LoaderContext.globalCourseExchangeMap.put(info[3], info[0]);
                     LoaderContext.globalCourseExchangeMap.put(info[0], info[3]);
